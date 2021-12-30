@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<p id="video">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<video autoplay muted id="myVideo">
+  <source src="https://video.wixstatic.com/video/7cc927_04cb40ea3d304823840f29bb1218c490/1080p/mp4/file.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<script>
+var video = document.getElementById("video");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+</video>
+
+
+<link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+  
+<!-- Display the countdown timer in an element -->
+<b>
+
+<h1 style="text-align:center;font-family:Lexend Deca;color:#EEE6BA;font-size:350%;text-shadow: 0px 5px #000000;line-height: 0.1">
+
+<p id="text">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+COUNTDOWN TO 2022</p>
+</b>
+</h1>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+  
+
+<b>
+<h1 style="text-align:center;font-family:Lexend Deca;color:#EEE6BA;font-size:900%;text-shadow: 0px 5px #000000;line-height: 0">
+    
+<!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+
+document.getElementById("video").style.display = "none";
+
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 60000) {
+    clearInterval(x);
+    document.getElementById("demo").style.display = "none";
+    document.getElementById("text").style.display = "none";
+    document.getElementById("video").style.display = "";
+  }
+}, 1000);
+</script>
+
+
+
+
